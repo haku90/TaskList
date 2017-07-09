@@ -27,7 +27,7 @@ autom4te.cache/
 tarballs/
 test-results/
 Thumbs.db
-
+wwwroot/
 # Mac bundle stuff
 *.dmg
 *.app
