@@ -20,4 +20,10 @@
 	<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" /> 
   </ItemGroup>
 	
+  <ItemGroup>
+    <ProjectReference Include="..\TaskListApp.Models\TaskListApp.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\Task.cs" />
+  </ItemGroup>
 </Project>
