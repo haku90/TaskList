@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TasksRestService } from '../tasks.rest';
 
 @Component({
   selector: 'task-list',
@@ -9,10 +10,10 @@ export class TaskListComponent implements OnInit {
 
   private tasks: any[];
 
-  constructor() { }
+  constructor(private rest: TasksRestService) { }
 
   ngOnInit() {
-    
+    this.rest.getTasks().subscribe(tasks => this.tasks = tasks);
   }
 
 }

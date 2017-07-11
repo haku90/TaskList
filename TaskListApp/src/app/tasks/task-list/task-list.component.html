@@ -2,7 +2,13 @@
   <div class="page-header">
     <h1>Test</h1>
     <div class="page-title"></div>
-    <div class="page-buttons"></div>
+    <div class="page-buttons">
+      <button type="button" class="btn btn-info">Test bootstrap</button>
+    </div>
   </div>
-  <div class="page-body"></div>
+  <div class="page-body">
+    <ul class="list-group">
+    <li class="list-group-item list-group-item-success" *ngFor="let task of tasks">{{task.title}}</li>
+    </ul>
+  </div>
 </div>

@@ -13,12 +13,16 @@ namespace TaskListApp.Controllers
     {
         [Route("api/tasks")]
         [HttpGet]
-        public List<Task> Get()
+        public RestResponse<List<Task>> Get()
         {
-            return new List<Task>
+            return new RestResponse<List<Task>>
             {
-                new Task { Title = "Zadanie1", Done = false },
-                new Task { Title = "Zadanie2", Done = true }
+                IsSuccess = true,
+                Data = new List<Task>
+                {
+	                new Task { Title = "Zadanie1", Done = false },
+	                new Task { Title = "Zadanie2", Done = true }
+                }
             };
         }
     }
