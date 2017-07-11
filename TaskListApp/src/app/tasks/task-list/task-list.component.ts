@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TasksRestService } from '../tasks.rest';
 
 @Component({
-  selector: 'task-list',
+  selector: 'app-task-list',
   templateUrl: './task-list.component.html'
 })
 
