@@ -8,7 +8,7 @@
   </div>
   <div class="page-body">
     <ul class="list-group">
-    <li class="list-group-item list-group-item-success" *ngFor="let task of tasks">{{task.title}}</li>
+     <app-task *ngFor="let task of tasks" [task]="task"></app-task>
     </ul>
   </div>
 </div>
