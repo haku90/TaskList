@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { SharedModule } from './shared/shared.module'
 import { AppComponent } from './app.component';
 import { TasksModule } from './tasks/tasks.module';
 
@@ -14,7 +15,8 @@ import { TasksModule } from './tasks/tasks.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    TasksModule
+    TasksModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

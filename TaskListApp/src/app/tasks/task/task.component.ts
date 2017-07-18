@@ -13,4 +13,7 @@ export class TaskComponent implements OnInit {
   ngOnInit() {
   }
 
+   markDone(checked) {
+     this.task.done = checked;
+   }
 }

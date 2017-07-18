@@ -7,7 +7,7 @@ import { TasksRestService } from '../tasks.rest';
 })
 
 export class TaskListComponent implements OnInit {
-
+  
   private tasks: any[];
 
   constructor(private rest: TasksRestService) { }
