@@ -1,7 +1,11 @@
-
-<li class="list-group-item list-group-item-success">
-    {{task.title}}
-  </li>
-  <app-checkbox [checked]="task?.done"
-                (checkedChange)="markDone($event)">
-  </app-checkbox>
+<div class="row task">
+  <div class="col-xs-2">
+    <button class="btn btn-success"> {{task.title}}
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </div>
+  <div class="col-xs-2">
+    <app-checkbox [checked]="task?.done" (checkedChange)="markDone($event)">
+    </app-checkbox>
+  </div>
+</div>

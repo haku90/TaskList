@@ -1,14 +1,16 @@
 <div class="page">
   <div class="page-header">
     <h1>Test</h1>
-    <div class="page-title"></div>
+    <div class="page-title">
+
+    </div>
     <div class="page-buttons">
       <button type="button" class="btn btn-info">Test bootstrap</button>
     </div>
   </div>
   <div class="page-body">
-    <ul class="list-group">
-     <app-task *ngFor="let task of tasks" [task]="task"></app-task>
-    </ul>
+    <div class="container">
+      <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+    </div>
   </div>
 </div>
